@@ -1,0 +1,33 @@
+#root {
+  .app {
+    .wrapper {
+      max-width: 1000px;
+      margin: 60px auto;
+    }
+  }
+
+  .global-messages {
+    width: 200px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 9000;
+  }
+}
+
+.addMessage-animation {
+  &-enter {
+    transform: translateX(110%);
+    &-active#{&} {
+      transform: translateX(0%);
+      transition: transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    }
+  }
+  &-leave {
+    transform: translateX(0%);
+    &-active#{&} {
+      transform: translateX(110%);
+      transition: transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    }
+  }
+}
