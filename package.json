@@ -14,7 +14,8 @@
     "redux-flash": "^2.0.0",
     "redux-form": "^7.3.0",
     "redux-modal": "^1.7.1",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-react": "^0.79.1"
   },
   "scripts": {
     "start": "react-scripts start",
